@@ -18,7 +18,7 @@
       margin-bottom: 12px;
     }
     .launch-h1 {
-      font-family: 'Playfair Display', serif;
+      font-family: Georgia, serif;
       font-size: clamp(36px, 5vw, 56px);
       font-weight: 600;
       line-height: 1.15;
@@ -42,15 +42,14 @@
       margin-top: 48px;
     }
     .feature-item {
-      padding: 28px;
-      background: white;
-      border: 1px solid var(--light-line);
-      border-radius: 4px;
+      padding: 28px 0;
+      border-top: 2px solid var(--coral);
     }
     .feature-item h3 {
-      font-family: 'Playfair Display', serif;
+      font-family: Georgia, serif;
       font-size: 20px;
       margin-bottom: 8px;
+      color: var(--dark);
     }
     .feature-item p {
       font-size: 15px;
@@ -62,27 +61,17 @@
       background: var(--brass-light);
       color: var(--brass);
       padding: 6px 18px;
-      border-radius: 3px;
       font-size: 13px;
       font-family: 'DM Mono', monospace;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      margin-bottom: 40px;
+      margin-bottom: 24px;
     }
     .launch-cta-row {
       display: flex;
       gap: 16px;
       flex-wrap: wrap;
       margin-top: 40px;
-    }
-    .section--centered {
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .section--centered .launch-sub {
-      text-align: center;
     }
   </style>
 </head>
@@ -97,6 +86,7 @@
     <ul>
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="pitch.html">The Pitch</a></li>
+      <li><a href="https://www.minertomillionaire.com" style="opacity: 0.45; pointer-events: none;">Website (offline)</a></li>
     </ul>
   </nav>
   <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" onclick="document.getElementById('mobile-menu').classList.toggle('is-open'); this.setAttribute('aria-expanded', document.getElementById('mobile-menu').classList.contains('is-open'));">
@@ -105,22 +95,22 @@
 </header>
 <nav class="nav-mobile" id="mobile-menu" aria-label="Mobile navigation">
   <ul>
-    <li><a href="index.html">Home</a></li>
+    <li style="padding-top: 16px;"><a href="index.html">Home</a></li>
     <li><a href="pitch.html">The Pitch</a></li>
+    <li><a href="https://www.minertomillionaire.com" style="opacity: 0.45; pointer-events: none;">Website (offline)</a></li>
   </ul>
 </nav>
 
 <section class="hero hero--home">
   <div class="container">
-    <div class="hero-eyebrow">Paul Hopewell LLC</div>
+    <p class="hero-tagline">Paul Hopewell LLC</p>
     <h1>Something Different <em>Is Coming.</em></h1>
     <p class="hero-subtitle">A unique and exclusive Growth, AI &amp; Exit Audit — built for established business owners who want more than generic advice.</p>
   </div>
 </section>
 
 <section class="section">
-  <div class="container section--centered">
-    <div class="trial-badge">In Trial Phase</div>
+  <div class="container">
     <div class="launch-date">Launching</div>
     <h2 class="launch-h1">1st September <em>2026</em></h2>
     <p class="launch-sub">We are currently testing the AI Growth Audit with a small group of established business owners. The results so far have exceeded expectations — real insights, real numbers, real clarity on the path to exit.</p>
@@ -149,27 +139,39 @@
   </div>
 </section>
 
-<section class="section">
-  <div class="container section--centered">
+<section class="section section-bordered">
+  <div class="container">
     <div class="section-label">The Trial</div>
     <h2 class="section-title">Excellent Results So Far</h2>
-    <p class="launch-sub" style="max-width: 600px;">Early clients are reporting clarity they have not found anywhere else. The audit pinpoints the specific AI levers that will move the needle in their business — and maps them onto a real exit timeline.</p>
-    <p class="launch-sub" style="max-width: 600px; margin-top: 16px;">We are not launching until it is right. September 1st is the date.</p>
+    <p class="launch-sub">Early clients are reporting clarity they have not found anywhere else. The audit pinpoints the specific AI levers that will move the needle in their business — and maps them onto a real exit timeline.</p>
+    <p class="launch-sub" style="margin-top: 16px;">We are not launching until it is right. September 1st is the date.</p>
   </div>
 </section>
 
 <section class="section-dark">
-  <div class="container section--centered">
-    <div class="section-label">Watch This Space</div>
+  <div class="container">
     <h2 class="section-title">The Countdown Is On</h2>
-    <p class="body-text" style="max-width: 520px; text-align: center;">A new kind of business audit. A credible guide who has built, sold and exited. And the tools to help you do the same — faster.</p>
-    <p class="body-text" style="max-width: 520px; text-align: center; color: rgba(249,247,244,0.6);">The AI Growth Audit. 1st September 2026.</p>
+    <p class="body-text" style="max-width: 520px;">A new kind of business audit. A credible guide who has built, sold and exited. And the tools to help you do the same — faster.</p>
+    <p class="body-text" style="max-width: 520px; color: rgba(249,247,244,0.6);">The Growth &amp; AI Audit. 1st September 2026.</p>
   </div>
 </section>
 
 <footer class="site-footer">
-  <p>Paul Hopewell LLC &copy; All rights reserved. Registered in Doha, Qatar.</p>
-  <p><a href="mailto:ph@paulhopewell.com">ph@paulhopewell.com</a> &middot; paulhopewell.com</p>
+  <span class="footer-brand">Paul Hopewell LLC &mdash; Growth, AI &amp; Exit Strategy</span>
+  <div class="footer-contact">
+    <span class="footer-contact-item">
+      <svg width="14" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+      Doha, Qatar
+    </span>
+    <a href="tel:+393479843794" class="footer-contact-item">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      +39 347 984 3794
+    </a>
+    <a href="mailto:ph@paulhopewell.com" class="footer-contact-item">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      ph@paulhopewell.com
+    </a>
+  </div>
 </footer>
 
 </body>
