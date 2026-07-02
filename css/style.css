@@ -889,6 +889,96 @@ textarea.form-input {
   border-width: 0;
 }
 
+/* ─── TRUST BAR ─── */
+.trust-bar {
+  border-bottom: 1px solid var(--light-line);
+  padding: 18px 48px;
+  background: var(--cream);
+}
+
+.trust-bar__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 12px 0;
+}
+
+.trust-bar__item {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brass);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.trust-bar__item::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 1px;
+  background: var(--coral);
+  flex-shrink: 0;
+}
+
+/* ─── ARTICLES TEASER GRID ─── */
+.articles-teaser-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.article-teaser {
+  border-top: 2px solid var(--light-line);
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.article-teaser__meta {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brass);
+}
+
+.article-teaser__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.article-teaser__title a { color: var(--dark); }
+.article-teaser__title a:hover { color: var(--coral); }
+
+.article-teaser__excerpt {
+  font-size: 14px;
+  color: var(--mid);
+  line-height: 1.7;
+  flex: 1;
+  margin: 0;
+}
+
+.article-teaser__link {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--coral);
+  align-self: flex-start;
+}
+
+.article-teaser__link:hover { color: var(--brass); }
+
 /* ─── DISCLAIMER ─── */
 .disclaimer {
   font-size: 14px;
@@ -951,4 +1041,9 @@ textarea.form-input {
 
   .pricing-highlight { padding: 28px; }
   .pricing-highlight__amount { font-size: 42px; }
+
+  .trust-bar { padding: 16px 24px; }
+  .trust-bar__items { gap: 12px; justify-content: flex-start; }
+
+  .articles-teaser-grid { grid-template-columns: 1fr; }
 }
