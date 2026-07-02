@@ -200,9 +200,10 @@ a:hover { color: var(--brass); }
   font-size: 18px;
   font-weight: 400;
   max-width: 600px;
-  opacity: 0.8;
+  opacity: 0.95;
   line-height: 1.6;
   margin-bottom: 48px;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.35);
 }
 
 .hero-cta {
