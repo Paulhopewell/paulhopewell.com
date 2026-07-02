@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miner to Millionaire — Paul Hopewell</title>
+<meta name="description" content="Miner to Millionaire — the book by Paul Hopewell.">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .m2m-hero {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 24px 64px;
+    background: var(--cream);
+    text-align: center;
+  }
+  .m2m-card {
+    max-width: 640px;
+    width: 100%;
+  }
+  .m2m-card h1 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--dark);
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+  .m2m-tagline {
+    font-size: 14px;
+    color: var(--brass);
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    margin-bottom: 28px;
+    text-transform: uppercase;
+  }
+  .m2m-divider {
+    width: 48px;
+    height: 2px;
+    background: var(--brass);
+    margin: 0 auto 24px;
+  }
+  .m2m-message {
+    font-size: 15px;
+    color: var(--mid);
+    line-height: 1.7;
+    margin-bottom: 14px;
+  }
+  .m2m-message strong {
+    color: var(--dark);
+  }
+  .m2m-contact {
+    margin-top: 32px;
+    padding: 24px;
+    background: var(--white);
+    border: 1px solid var(--light-line);
+    border-radius: 4px;
+  }
+  .m2m-contact p {
+    font-size: 14px;
+    color: var(--mid);
+    margin-bottom: 6px;
+  }
+  .m2m-contact a {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--coral);
+    text-decoration: none;
+  }
+  .m2m-contact a:hover {
+    color: var(--brass);
+  }
+  .m2m-locations {
+    margin-top: 24px;
+    font-size: 12px;
+    color: var(--mid);
+    letter-spacing: 1px;
+  }
+  .m2m-header {
+    display: flex;
+    justify-content: center;
+    padding: 32px 24px 20px;
+    background: var(--white);
+  }
+  .m2m-header img {
+    height: 80px;
+  }
+  .m2m-footer {
+    background: var(--dark);
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .m2m-footer img {
+    height: 20px;
+  }
+  .m2m-footer .legal {
+    font-size: 10px;
+    color: var(--cream);
+    opacity: 0.6;
+    text-align: right;
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html"><img src="assets/images/ph-badge.png" alt="PH" class="brand-mark"></a>
+  <nav class="site-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pitch.html">The Pitch</a></li>
+      <li><a href="m2m.html" class="active">Miner to Millionaire</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="m2m-header">
+  <img src="assets/images/ph-badge-80.png" alt="Paul Hopewell LLC">
+</div>
+
+<main class="m2m-hero">
+  <div class="m2m-card">
+    <h1>We're building something different.</h1>
+
+    <p class="m2m-tagline">AI, Growth &amp; Exit Strategy</p>
+
+    <div class="m2m-divider"></div>
+
+    <p class="m2m-message">
+      <strong>Paul Hopewell LLC</strong> helps established SME owners use AI to grow their business and exit on their own terms.
+    </p>
+
+    <p class="m2m-message">
+      Our founder, Paul, has done it twice. From coal mines to millionaire. He built, scaled, and sold his own business. Now he's doing it again, this time using AI to compress a 30-year journey into something far faster.
+    </p>
+
+    <p class="m2m-message">
+      The full website is in development and will launch with our AI Growth Audit. That is the diagnostic that starts the conversation.
+    </p>
+
+    <div class="m2m-contact">
+      <p>In the meantime, reach us at:</p>
+      <a href="mailto:ph@paulhopewell.com">ph@paulhopewell.com</a>
+    </div>
+
+    <div class="m2m-locations">ITALY &nbsp;·&nbsp; UK &nbsp;·&nbsp; QATAR</div>
+  </div>
+</main>
+
+<footer class="m2m-footer">
+  <img src="assets/images/ph-monogram-24.png" alt="PH">
+  <div class="legal">
+    Paul Hopewell LLC<br>
+    AI, Growth &amp; Exit Strategy
+  </div>
+</footer>
+
+<!-- Mobile overlay nav -->
+<div class="mobile-overlay" id="mobileOverlay">
+  <button class="mobile-close" onclick="document.getElementById('mobileOverlay').classList.remove('open')">✕</button>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="pitch.html">The Pitch</a></li>
+    <li><a href="m2m.html">Miner to Millionaire</a></li>
+  </ul>
+</div>
+
+</body>
+</html>
