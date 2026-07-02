@@ -3,15 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Paul Hopewell LLC — Company profile and pitch. AI, Growth & Exit Strategy for established business owners. Building from Qatar in 2026.">
+  <meta name="description" content="Paul Hopewell LLC — AI, Growth & Exit Strategy. Founded in Qatar, 2026. Helping established entrepreneurs in Qatar and the UK grow and exit on their own terms.">
   <title>Company Profile — Paul Hopewell LLC</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="assets/images/ph-badge.png" type="image/png">
+  <style>
+    .pitch-section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(24px, 3.5vw, 32px);
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+    .pitch-lead {
+      font-size: 18px;
+      color: var(--mid);
+      line-height: 1.75;
+      max-width: 640px;
+    }
+    .pitch-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+      margin-top: 32px;
+    }
+    .pitch-card {
+      padding: 28px;
+      background: white;
+      border: 1px solid var(--light-line);
+      border-radius: 4px;
+    }
+    .pitch-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+    .pitch-card p {
+      font-size: 15px;
+      color: var(--mid);
+      line-height: 1.65;
+    }
+    .pitch-card__number {
+      font-family: 'DM Mono', monospace;
+      font-size: 13px;
+      color: var(--coral);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .conclusion-box {
+      background: var(--coral-light);
+      border-left: 3px solid var(--coral);
+      padding: 24px 28px;
+      border-radius: 0 4px 4px 0;
+      margin-top: 32px;
+    }
+    .conclusion-box p {
+      font-size: 16px;
+      color: var(--dark);
+      line-height: 1.7;
+    }
+  </style>
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="site-header">
   <a href="index.html" class="site-logo">
     <img src="assets/images/ph-badge.png" class="site-logo__badge" alt="">
@@ -20,11 +76,7 @@
   <nav class="nav-desktop" aria-label="Primary navigation">
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="ai-growth-audit.html">AI Growth Audit</a></li>
-      <li><a href="m2m-framework.html">M2M Framework</a></li>
-      <li><a href="articles.html">Articles</a></li>
-      <li><a href="clients.html">Clients</a></li>
+      <li><a href="pitch.html" class="active">Company Profile</a></li>
     </ul>
   </nav>
   <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" onclick="document.getElementById('mobile-menu').classList.toggle('is-open'); this.setAttribute('aria-expanded', document.getElementById('mobile-menu').classList.contains('is-open'));">
@@ -34,11 +86,7 @@
 <nav class="nav-mobile" id="mobile-menu" aria-label="Mobile navigation">
   <ul>
     <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="ai-growth-audit.html">AI Growth Audit</a></li>
-    <li><a href="m2m-framework.html">M2M Framework</a></li>
-    <li><a href="articles.html">Articles</a></li>
-    <li><a href="clients.html">Clients</a></li>
+    <li><a href="pitch.html">Company Profile</a></li>
   </ul>
 </nav>
 
@@ -46,134 +94,160 @@
 <section class="hero hero--home">
   <div class="container">
     <div class="hero-eyebrow">Company Profile</div>
-    <h1>Built. Learned. Scaled. <em>Building Again.</em></h1>
-    <p class="hero-subtitle">Paul Hopewell LLC — AI, Growth &amp; Exit Strategy. Founded in Qatar, 2026. Serving established business owners who want to grow and exit on their own terms.</p>
+    <h1>AI, Growth &amp; Exit Strategy. <em>Built in Qatar.</em></h1>
+    <p class="hero-subtitle">Paul Hopewell LLC helps established entrepreneurs grow their business and exit on their own terms — using AI as the accelerant. Founded in Doha, 2026.</p>
   </div>
 </section>
 
-<!-- COMPANY OVERVIEW -->
+<!-- SECTION 1: THE FOUNDER -->
 <section class="section">
   <div class="container">
-    <div class="section-label">The Company</div>
-    <h2 class="section-title">Paul Hopewell LLC</h2>
+    <div class="section-label">01 &mdash; The Founder</div>
+    <h2 class="pitch-section-title">Thirty Years of Building, Scaling and Exiting</h2>
 
-    <p class="body-text"><strong>Paul Hopewell LLC</strong> was founded in Qatar in 2026 to serve one mission: help established business owners grow their company and exit on the best possible terms — using AI as the accelerant.</p>
+    <p class="pitch-lead">Paul Hopewell is not a career consultant. He started as an apprentice electrician at Ollerton Colliery — a mining village in Nottinghamshire, England. He left school with minimal qualifications and no plan.</p>
 
-    <p class="body-text">We are not a traditional consultancy. We are not a tech company. We occupy a space almost nobody else does: the intersection of <strong>real business experience</strong>, <strong>practical AI deployment</strong>, and <strong>exit strategy earned through actually doing it</strong>.</p>
+    <p class="body-text" style="margin-top: 16px;">When his father Peter was diagnosed with Parkinson's, Paul bought his father's intruder-alarm business. He was young. He had no formal business training. What he had was a work ethic forged underground and a refusal to fail. He grew that business to two-and-a-half times its original value, sold it, and paid his father in full.</p>
+
+    <p class="body-text">He then started another business — and it failed. Those lessons proved foundational. Every successful business owner has a failure in their story. What matters is what you take from it.</p>
+
+    <p class="body-text">Next came <strong>Synergy (PH) Ltd</strong> — a health-insurance business. Paul knew nothing about health insurance when he started. He learned on the job, systemised every process, delegated the day-to-day, and scaled it. He sold Synergy to become a millionaire, and then a multimillionaire.</p>
 
     <div class="pullquote">
-      <p>Three decades of building and selling real businesses — now combined with agentic AI.</p>
+      <p>A business can only grow as far as the owner is capable of leading it. Paul learned that first-hand — and built the framework to help others.</p>
     </div>
   </div>
 </section>
 
-<!-- THE PROBLEM & SOLUTION -->
+<!-- SECTION 2: THE FRAMEWORK -->
 <section class="section section-bordered">
   <div class="container">
-    <div class="section-label">The Opportunity</div>
-    <h2 class="section-title">What We Solve</h2>
+    <div class="section-label">02 &mdash; The Framework</div>
+    <h2 class="pitch-section-title">The M2M Method: A Proven Path from Operation to Exit</h2>
 
-    <p class="body-text">Established UK SME owners face a unique pressure today. They know AI is coming. They know their competitors are experimenting with it. They know they need to act. But they do not know where to start, who to trust, or how to separate genuine business leverage from Silicon Valley hype.</p>
+    <p class="pitch-lead">Building a business is not random. Paul identified the pattern — five levels of business evolution matched by five levels of leader evolution. The M2M Coaching Framework is the structural backbone behind everything Paul Hopewell LLC delivers.</p>
 
-    <p class="body-text">At the same time, they are running a real business — with a team, customers, and commercial pressure. They do not need abstract AI education. They need someone who understands their operations, can identify where AI will actually move the needle, and can show them the path from here to exit.</p>
-
-    <p class="body-text"><strong>That is what we do.</strong> We enter through a paid AI Growth Audit — a diagnostic session that maps where the business is, where it is going, and how AI can accelerate the path to exit. From there, we build the roadmap and partner on implementation.</p>
-  </div>
-</section>
-
-<!-- BUSINESS MODEL -->
-<section class="section">
-  <div class="container">
-    <div class="section-label">Business Model</div>
-    <h2 class="section-title">How We Work</h2>
-
-    <div class="foundations-grid">
-      <div class="foundation-card">
-        <div class="foundation-number">1</div>
-        <h3>Lead</h3>
-        <p>The AI Growth Audit (£799) is our entry point. It is a paid diagnostic — not a free consultation. It attracts owners who are serious.</p>
+    <div class="pitch-grid-2">
+      <div class="pitch-card">
+        <div class="pitch-card__number">Level 1</div>
+        <h3>Survival</h3>
+        <p>The owner does everything. The business depends on one person. The first step is building the foundations that allow growth to begin.</p>
       </div>
-      <div class="foundation-card">
-        <div class="foundation-number">2</div>
-        <h3>Diagnose</h3>
-        <p>We understand where the business is, where the owner wants to go, and how AI can accelerate that path. The output is a strategic roadmap — not a generic report.</p>
+      <div class="pitch-card">
+        <div class="pitch-card__number">Level 2</div>
+        <h3>Stability</h3>
+        <p>Processes emerge. The business begins to function without constant intervention. The owner starts leading instead of doing.</p>
       </div>
-      <div class="foundation-card">
-        <div class="foundation-number">3</div>
-        <h3>Deliver</h3>
-        <p>Strategic roadmap paired with implementation. We partner with owners to put AI to work — systematising operations, surfacing growth levers, building toward exit.</p>
-      </div>
-      <div class="foundation-card">
-        <div class="foundation-number">4</div>
+      <div class="pitch-card">
+        <div class="pitch-card__number">Level 3</div>
         <h3>Scale</h3>
-        <p>As the model proves, we systematise and delegate intake — moving up to larger and group engagements. The same pattern that built Synergy: learn it, script it, delegate it.</p>
+        <p>Growth accelerates. AI and systemisation replace the owner's hands. The business runs on its own engine. The leader evolves from operator to strategist.</p>
+      </div>
+      <div class="pitch-card">
+        <div class="pitch-card__number">Level 4</div>
+        <h3>Significance</h3>
+        <p>The business becomes an asset — attractive to buyers, resilient to shocks. The owner builds a legacy beyond the day-to-day.</p>
+      </div>
+      <div class="pitch-card">
+        <div class="pitch-card__number">Level 5</div>
+        <h3>Exit</h3>
+        <p>The owner exits on their own terms — sale, succession, or stepping back as Chairman. The business continues without them. The leader is free.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- THE FOUNDER -->
-<section class="section section-bordered">
-  <div class="container">
-    <div class="section-label">The Founder</div>
-    <h2 class="section-title">Paul Hopewell — AI, Growth &amp; Exit Strategist</h2>
-
-    <div class="feature-image">
-      <img src="assets/images/paul-hopewell.jpg" alt="Paul Hopewell" style="border-radius: 4px;">
-    </div>
-
-    <p class="body-text">Paul Hopewell is not a career consultant. He started as an apprentice electrician at Ollerton Colliery — a mining village in Nottinghamshire. He left school with minimal qualifications and no plan.</p>
-
-    <p class="body-text">When his father Peter was diagnosed with Parkinson's, Paul bought his father's intruder-alarm business. He was young. He had no formal business training. What he had was a work ethic forged underground and a refusal to fail. He grew that business to two-and-a-half times its original value, sold it, and paid his father in full.</p>
-
-    <div class="pullquote">
-      <p>He then built another business from scratch — knowing nothing about the industry — systematised it, scaled it, and sold it to become a multimillionaire.</p>
-    </div>
-
-    <p class="body-text">That business was <strong>Synergy (PH) Ltd</strong>, a health-insurance firm Paul founded without knowing anything about health insurance. He learned on the job, scripted every process, delegated operations, and scaled it to a multimillion-pound exit.</p>
-
-    <p class="body-text">He is now building again — this time from Qatar, using AI as the accelerant. The mission: take the playbook he lived and make it available to other business owners who want the same outcome.</p>
-  </div>
-</section>
-
-<!-- M2M FRAMEWORK -->
+<!-- SECTION 3: THE OPPORTUNITY — QATAR -->
 <section class="section">
   <div class="container">
-    <div class="section-label">Core IP</div>
-    <h2 class="section-title">The M2M Coaching Framework</h2>
+    <div class="section-label">03 &mdash; Why Qatar</div>
+    <h2 class="pitch-section-title">A Strategic Base for Global Growth</h2>
 
-    <p class="body-text">The M2M Framework is a five-level business and leader development model. It is based on Maslow's Hierarchy — applied to business growth. Dual-track: business evolution and leader evolution in parallel. AI overlay integrated throughout.</p>
+    <p class="pitch-lead">Qatar is not just where we are registered. It is central to the vision. A 0% personal income tax environment. A government actively investing in entrepreneurship and AI. A location between Europe, Asia and Africa — serving entrepreneurs across multiple markets.</p>
 
-    <p class="body-text">It is the structural backbone behind everything Paul Hopewell LLC delivers. Every AI Growth Audit maps onto the M2M levels. Every engagement follows the M2M arc. It is not a theory — it is the pattern Paul followed himself, codified so other owners can follow it faster.</p>
-
-    <p class="body-text">The companion book, <em>Miner to Millionaire</em>, documents the 30-year journey of golden nuggets — the small, compounding lessons — that produced the framework. Publication is expected in 2027.</p>
+    <div class="pitch-grid-2">
+      <div class="pitch-card">
+        <h3>For Qatari Entrepreneurs</h3>
+        <p>Qatar's SME sector is growing fast. The government's Vision 2030 has created fertile ground for new businesses. But growth — real, sustainable growth — requires more than ambition. It requires the frameworks, systems and AI leverage that turns a promising business into an exit-ready asset. Paul Hopewell LLC brings three decades of proven methodology to Qatari founders building their future.</p>
+      </div>
+      <div class="pitch-card">
+        <h3>For UK Entrepreneurs</h3>
+        <p>The UK is where Paul built, scaled and sold. He knows the landscape — the tax structure, the buyer expectations, the exit paths. UK SME owners face a unique pressure today: AI is reshaping every industry, and those who act early will exit on better terms. We serve UK owners remotely with the same rigour — video, email, platform tools. Geography is no barrier.</p>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- QATAR -->
+<!-- SECTION 4: THE SERVICE -->
 <section class="section section-bordered">
   <div class="container">
-    <div class="section-label">Where We Are Based</div>
-    <h2 class="section-title">Registered in Qatar. Serving Business Owners Everywhere.</h2>
+    <div class="section-label">04 &mdash; The Service</div>
+    <h2 class="pitch-section-title">The AI Growth Audit</h2>
 
-    <p class="body-text">Paul Hopewell LLC was founded and registered in Doha, Qatar in 2026. The move was deliberate: a 0% tax environment that reflects the financial discipline we teach our clients. The business operates remotely — working with UK-based SME owners via video, email, and platform tools. No geography limits who we can serve.</p>
+    <p class="pitch-lead">The AI Growth Audit is our diagnostic entry point — a paid session (£799) that maps exactly where your business is, where it is going, and how AI can accelerate the path to exit.</p>
 
-    <p class="body-text">Qatar's strategic position — between Europe, Asia, and Africa — also opens a future path to serving business owners across multiple English-speaking markets. For now, our primary market is the UK: where Paul built, sold, and knows the landscape deeply.</p>
+    <div class="pitch-grid-2">
+      <div class="pitch-card">
+        <div class="pitch-card__number">Step 1</div>
+        <h3>Understand Your Position</h3>
+        <p>We map your business onto the M2M framework. Where are you? Where do you want to be? What is the gap — and what is it costing you?</p>
+      </div>
+      <div class="pitch-card">
+        <div class="pitch-card__number">Step 2</div>
+        <h3>Identify the AI Levers</h3>
+        <p>Not every part of a business benefits from AI. We pinpoint the specific areas where AI will actually move the needle — backed by data, not hype.</p>
+      </div>
+      <div class="pitch-card">
+        <div class="pitch-card__number">Step 3</div>
+        <h3>Build the Roadmap</h3>
+        <p>A strategic plan that maps your path from current state to exit — with concrete steps, timelines, and the AI tools to accelerate each stage.</p>
+      </div>
+      <div class="pitch-card">
+        <div class="pitch-card__number">Step 4</div>
+        <h3>Partner on Execution</h3>
+        <p>The audit is the start, not the end. We partner with you to implement the roadmap — systematising operations, surfacing growth levers, building toward exit.</p>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- WHY NOW -->
+<!-- SECTION 5: THE MARKET -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">05 &mdash; The Market</div>
+    <h2 class="pitch-section-title">Two Markets, One Mission</h2>
+
+    <p class="pitch-lead">The addressable market is substantial — and underserved. Established SME owners on both sides of the Gulf-Europe corridor face the same problem: they know AI matters, but nobody is showing them how to use it in <em>their</em> business from someone who has actually built and sold one.</p>
+
+    <div class="pitch-grid-2">
+      <div class="pitch-card">
+        <h3>Qatar</h3>
+        <p>A growing community of entrepreneurs, strong government backing, and a market hungry for experienced guidance. Few credible business coaches operate here with real exit experience. Paul Hopewell LLC is positioned to serve that gap — from inside the market, not from a distance.</p>
+      </div>
+      <div class="pitch-card">
+        <h3>United Kingdom</h3>
+        <p>An estimated 5.5 million SMEs in the UK. The majority are owner-operated. Most will never sell. The difference between those who do and those who do not is preparation — and AI. Paul Hopewell LLC targets the established owners who are ready to act.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 6: THE CONCLUSION -->
 <section class="section-dark">
   <div class="container">
-    <div class="section-label">Why Now</div>
-    <h2 class="section-title">The Window Is Open</h2>
+    <div class="section-label">Conclusion</div>
+    <h2 class="section-title">The Right Guide, at the Right Time</h2>
 
-    <p class="body-text">AI adoption among UK SMEs is accelerating. The tools exist. The cost has dropped. The competitive pressure is building. And the businesses that act now — before the wave becomes a flood — are the ones that will exit on their own terms.</p>
-    <p class="body-text">Paul Hopewell LLC was built for this moment. A credible, experienced guide — someone who has actually done it — showing established owners how to use AI to grow faster and exit better.</p>
-    <p class="body-text" style="color: rgba(249,247,244,0.7);">If that sounds like where you are, we should talk.</p>
+    <p class="body-text">Paul Hopewell LLC exists for one reason: to help established entrepreneurs grow their business and exit on their own terms — using AI as the accelerant.</p>
 
-    <div style="margin-top: 40px;">
-      <a href="ai-growth-audit.html" class="cta-btn cta-btn-dark">Book an AI Growth Audit &rarr;</a>
+    <p class="body-text">The founder has walked this path. The framework is proven. The timing — with AI reshaping every industry and Qatar emerging as a global business hub — could not be better.</p>
+
+    <p class="body-text">Whether you are building in Doha or scaling in Manchester, the principles are the same. The tools are available. The only missing piece is someone who can show you how to put them together.</p>
+
+    <p class="body-text" style="color: rgba(249,247,244,0.7);">That is what we do.</p>
+
+    <div class="conclusion-box">
+      <p><strong>We help entrepreneurs in Qatar and the UK grow their business — using AI, a proven framework, and three decades of real-world experience. Not theory. Not hype. A credible guide who has built, scaled and exited, now building again.</strong></p>
     </div>
   </div>
 </section>
@@ -182,28 +256,28 @@
 <section class="section">
   <div class="container">
     <div class="section-label">At a Glance</div>
-    <h2 class="section-title">Key Facts</h2>
+    <h2 class="pitch-section-title">Paul Hopewell LLC</h2>
 
     <div class="methodology-steps">
       <div class="method-step">
         <div class="method-step-num">Founded</div>
         <h3>2026</h3>
-        <p>Registered in Doha, Qatar. Operations underway from Q4 2026.</p>
+        <p>Registered in Doha, Qatar. Operations launching September 2026.</p>
       </div>
       <div class="method-step">
         <div class="method-step-num">Founder</div>
         <h3>Paul Hopewell</h3>
-        <p>30+ years building, scaling, and selling businesses. Now applying AI to the same playbook.</p>
+        <p>30+ years building, scaling, and selling businesses. From mining village to multimillion-pound exits.</p>
       </div>
       <div class="method-step">
-        <div class="method-step-num">Target Client</div>
-        <h3>UK SME Owners</h3>
-        <p>Established businesses with a team, revenue, and an exit horizon of 2–7 years.</p>
+        <div class="method-step-num">Markets</div>
+        <h3>Qatar &amp; United Kingdom</h3>
+        <p>Serving established entrepreneurs across the Gulf-Europe corridor. Remote-first, globally capable.</p>
       </div>
       <div class="method-step">
         <div class="method-step-num">Core Offer</div>
         <h3>AI Growth Audit</h3>
-        <p>Paid diagnostic (£799) that maps the path from current state to exit — with AI as the accelerant.</p>
+        <p>Paid diagnostic (£799) launching 1st September 2026. Map your path from current state to exit — with AI as the accelerant.</p>
       </div>
     </div>
   </div>
@@ -213,18 +287,13 @@
 <section class="section section-bordered">
   <div class="container text-center">
     <div class="section-label">Contact</div>
-    <h2 class="section-title">Paul Hopewell LLC</h2>
-    <p class="body-text">Email: <a href="mailto:ph@paulhopewell.com">ph@paulhopewell.com</a></p>
-    <p class="body-text">Website: <a href="https://paulhopewell.com">paulhopewell.com</a></p>
+    <h2 class="pitch-section-title">Paul Hopewell LLC</h2>
+    <p class="body-text"><a href="mailto:ph@paulhopewell.com">ph@paulhopewell.com</a></p>
     <p class="body-text">Registered in Doha, Qatar</p>
-
-    <div class="text-center mt-xl">
-      <a href="ai-growth-audit.html" class="cta-btn cta-btn-primary">Work With Us &rarr;</a>
-    </div>
+    <p class="body-text" style="color: var(--mid); margin-top: 16px;">Launching 1st September 2026. Currently in trial phase with excellent early results.</p>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer class="site-footer">
   <p>Paul Hopewell LLC &copy; All rights reserved. Registered in Doha, Qatar.</p>
   <p><a href="mailto:ph@paulhopewell.com">ph@paulhopewell.com</a> &middot; paulhopewell.com</p>

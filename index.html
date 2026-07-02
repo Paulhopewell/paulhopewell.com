@@ -3,15 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Paul Hopewell LLC — AI, Growth & Exit Strategy for established UK SME owners. Three decades of building and selling real businesses, now combined with agentic AI.">
-  <title>Paul Hopewell LLC — AI, Growth &amp; Exit Strategy</title>
+  <meta name="description" content="Paul Hopewell LLC — AI, Growth & Exit Strategy. Launching 1st September 2026. A unique and exclusive audit for established business owners.">
+  <title>Paul Hopewell LLC — Launching September 2026</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="assets/images/ph-badge.png" type="image/png">
+  <style>
+    .launch-date {
+      font-family: 'DM Mono', monospace;
+      font-size: 14px;
+      letter-spacing: 0.15em;
+      color: var(--coral);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .launch-h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 600;
+      line-height: 1.15;
+      color: var(--dark);
+      margin-bottom: 24px;
+    }
+    .launch-h1 em {
+      color: var(--coral);
+      font-style: italic;
+    }
+    .launch-sub {
+      font-size: 18px;
+      color: var(--mid);
+      max-width: 560px;
+      line-height: 1.6;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 32px;
+      margin-top: 48px;
+    }
+    .feature-item {
+      padding: 28px;
+      background: white;
+      border: 1px solid var(--light-line);
+      border-radius: 4px;
+    }
+    .feature-item h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+    .feature-item p {
+      font-size: 15px;
+      color: var(--mid);
+      line-height: 1.6;
+    }
+    .trial-badge {
+      display: inline-block;
+      background: var(--brass-light);
+      color: var(--brass);
+      padding: 6px 18px;
+      border-radius: 3px;
+      font-size: 13px;
+      font-family: 'DM Mono', monospace;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+    .launch-cta-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+    .section--centered {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .section--centered .launch-sub {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="site-header">
   <a href="index.html" class="site-logo">
     <img src="assets/images/ph-badge.png" class="site-logo__badge" alt="">
@@ -20,12 +96,7 @@
   <nav class="nav-desktop" aria-label="Primary navigation">
     <ul>
       <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="ai-growth-audit.html">AI Growth Audit</a></li>
-      <li><a href="m2m-framework.html">M2M Framework</a></li>
-      <li><a href="articles.html">Articles</a></li>
-      <li><a href="clients.html">Clients</a></li>
-    <li><a href="pitch.html">Company Profile</a></li>
+      <li><a href="pitch.html">Company Profile</a></li>
     </ul>
   </nav>
   <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" onclick="document.getElementById('mobile-menu').classList.toggle('is-open'); this.setAttribute('aria-expanded', document.getElementById('mobile-menu').classList.contains('is-open'));">
@@ -35,205 +106,69 @@
 <nav class="nav-mobile" id="mobile-menu" aria-label="Mobile navigation">
   <ul>
     <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="ai-growth-audit.html">AI Growth Audit</a></li>
-    <li><a href="m2m-framework.html">M2M Framework</a></li>
-    <li><a href="articles.html">Articles</a></li>
-    <li><a href="clients.html">Clients</a></li>
     <li><a href="pitch.html">Company Profile</a></li>
   </ul>
 </nav>
 
-<!-- HERO -->
 <section class="hero hero--home">
   <div class="container">
     <div class="hero-eyebrow">Paul Hopewell LLC</div>
-    <h1>Grow Faster. Exit <em>on Your Terms.</em></h1>
-    <p class="hero-subtitle">Three decades of building and selling real businesses — now combined with agentic AI to help established UK owners reach the exit they've earned.</p>
-    <div class="hero-cta">
-      <a href="ai-growth-audit.html" class="btn btn-filled">Book an AI Growth Audit</a>
-      <a href="m2m-framework.html" class="btn btn-dark">Learn the Framework</a>
-    </div>
+    <h1>Something Different <em>Is Coming.</em></h1>
+    <p class="hero-subtitle">A unique and exclusive Growth, AI &amp; Exit Audit — built for established business owners who want more than generic advice.</p>
   </div>
 </section>
 
-<!-- TRUST BAR -->
-<div class="trust-bar">
-  <ul class="trust-bar__items">
-    <li class="trust-bar__item">30+ years building businesses</li>
-    <li class="trust-bar__item">Multiple successful exits</li>
-    <li class="trust-bar__item">Agentic AI — practically applied</li>
-    <li class="trust-bar__item">Established UK SME owners</li>
-  </ul>
-</div>
-
-<!-- WHY DIFFERENT -->
-<section class="section" id="intro">
-  <div class="container">
-    <p class="body-text">Most business advice is generic. Grow faster. Work smarter. Delegate more. You've heard it all — and most of it comes from people who've never built and sold a business themselves.</p>
-    <p class="body-text">Paul Hopewell LLC combines three things almost nobody combines: <strong>real business coaching</strong> from someone who has done it, <strong>practical agentic AI</strong> applied to your operations, and <strong>exit strategy</strong> earned through experience — not advised from the sidelines.</p>
-
-    <div class="pullquote">
-      <p>A business can only grow as far as the owner is capable of leading it.</p>
-    </div>
-
-    <p class="body-text">If you're an established UK owner thinking about exit in the next 2–7 years, the question is not whether AI will reshape your industry. It's whether you'll be the one using it — or the one being overtaken by it.</p>
+<section class="section">
+  <div class="container section--centered">
+    <div class="trial-badge">In Trial Phase</div>
+    <div class="launch-date">Launching</div>
+    <h2 class="launch-h1">1st September <em>2026</em></h2>
+    <p class="launch-sub">We are currently testing the AI Growth Audit with a small group of established business owners. The results so far have exceeded expectations — real insights, real numbers, real clarity on the path to exit.</p>
   </div>
 </section>
 
-<!-- THREE THINGS -->
 <section class="section section-bordered">
   <div class="container">
-    <div class="section-label">What We Bring</div>
+    <div class="section-label">What We're Building</div>
     <h2 class="section-title">Three Things Nobody Else Combines</h2>
-    <p class="body-text">Brought together by one operator with the scars to prove it — not three consultants in a coalition.</p>
 
-    <div class="foundations-grid">
-      <div class="foundation-card">
-        <div class="foundation-number">1</div>
-        <h3>Business Coaching</h3>
-        <p>Not theory. Not frameworks borrowed from a textbook. Three decades of building, growing and selling real businesses — from a Nottinghamshire apprenticeship to multimillion-pound exits.</p>
+    <div class="feature-grid">
+      <div class="feature-item">
+        <h3>Business Growth</h3>
+        <p>Not theory. Thirty years of building, scaling and selling real businesses — compressed into a diagnostic that shows you exactly where your next lever is.</p>
       </div>
-      <div class="foundation-card">
-        <div class="foundation-number">2</div>
-        <h3>Agentic AI</h3>
-        <p>AI is not a tech project — it's a business lever. We show you where AI fits <em>your</em> business: a practical roadmap built around your operations, your team, and your exit timeline.</p>
+      <div class="feature-item">
+        <h3>Practical AI</h3>
+        <p>AI applied to <em>your</em> operations, <em>your</em> numbers, <em>your</em> exit timeline. No jargon. No hype. A roadmap built around your business — not a tech demo.</p>
       </div>
-      <div class="foundation-card">
-        <div class="foundation-number">3</div>
+      <div class="feature-item">
         <h3>Exit Strategy</h3>
-        <p>Most owners only sell once. We've done it more than once. We help you build a business someone wants to buy — and prepare you for what comes after the sale.</p>
+        <p>Most owners only sell once. We've done it more than once. We help you build a business someone wants to buy — and prepare you for what comes after.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- THE PROOF (dark) -->
+<section class="section">
+  <div class="container section--centered">
+    <div class="section-label">The Trial</div>
+    <h2 class="section-title">Excellent Results So Far</h2>
+    <p class="launch-sub" style="max-width: 600px;">Early clients are reporting clarity they have not found anywhere else. The audit pinpoints the specific AI levers that will move the needle in their business — and maps them onto a real exit timeline.</p>
+    <p class="launch-sub" style="max-width: 600px; margin-top: 16px;">We are not launching until it is right. September 1st is the date.</p>
+  </div>
+</section>
+
 <section class="section-dark">
-  <div class="container">
-    <div class="section-label">The Proof</div>
-    <h2 class="section-title">We Have Walked This Path</h2>
-
-    <p class="body-text">Our founder, Paul Hopewell, started as an apprentice electrician in a Nottinghamshire mining village. He bought his father's intruder-alarm business when his father was diagnosed with Parkinson's — grew it to 2.5&times; its value, sold it, and paid his father in full.</p>
-    <p class="body-text">He then built <strong>Synergy (PH) Ltd</strong> — a health-insurance business he started knowing nothing about the industry. He learned on the job, systemised every process, delegated the day-to-day, and scaled it to a multimillion-pound exit.</p>
-    <p class="body-text">He is now building again — this time from Qatar, using AI as the accelerant. <strong>That is the playbook Paul Hopewell LLC exists to deliver to other owners.</strong></p>
-
-    <div style="margin-top: 40px;">
-      <a href="about.html" class="cta-btn cta-btn-dark">Read Paul's Full Story &rarr;</a>
-    </div>
+  <div class="container section--centered">
+    <div class="section-label">Watch This Space</div>
+    <h2 class="section-title">The Countdown Is On</h2>
+    <p class="body-text" style="max-width: 520px; text-align: center;">A new kind of business audit. A credible guide who has built, sold and exited. And the tools to help you do the same — faster.</p>
+    <p class="body-text" style="max-width: 520px; text-align: center; color: rgba(249,247,244,0.6);">The AI Growth Audit. 1st September 2026.</p>
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section class="section section-bordered">
-  <div class="container">
-    <div class="section-label">Client Results</div>
-    <h2 class="section-title">What Happens When Owners Act</h2>
-
-    <div class="testimonial-grid">
-
-      <div class="testimonial">
-        <blockquote>"We had a profitable business but it was running us, not the other way round. The AI Growth Audit showed us exactly where to start. Six months later, we had automated our quoting system and cut response time from three days to twenty minutes. That alone paid for the audit fifty times over."</blockquote>
-        <div class="testimonial__author">
-          <div class="testimonial__avatar">JM</div>
-          <div>
-            <p class="testimonial__name">James M.</p>
-            <p class="testimonial__role">Director, Precision Engineering Ltd &middot; Sheffield</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial">
-        <blockquote>"We came for the exit strategy. What we got was a complete rethink of how the business operates. The M2M Framework forced us to look at the business and the leadership together. That was uncomfortable. It was also exactly what we needed. We are now on track to exit two years ahead of our original plan."</blockquote>
-        <div class="testimonial__author">
-          <div class="testimonial__avatar">RK</div>
-          <div>
-            <p class="testimonial__name">Raj K.</p>
-            <p class="testimonial__role">Founder &amp; CEO, Midlands Logistics Group &middot; Birmingham</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <p style="font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.08em; color: var(--brass); margin-top: 24px;">Representative examples. Results depend on your specific business, industry and commitment to implementation. <a href="clients.html" style="color: var(--brass); text-decoration: underline;">See all client scenarios &rarr;</a></p>
-  </div>
-</section>
-
-<!-- NEXT STEPS / CTA GRID -->
-<section class="section section-bordered" id="where-are-you">
-  <div class="container">
-    <div class="section-label">Next Steps</div>
-    <h2 class="section-title">Where Are You? And What Happens Next?</h2>
-    <p class="body-text">The M2M Framework maps the journey from Level 1 (the business depends entirely on you) to Level 5 (the business runs without you and is ready to sell). The question is: where are you on it?</p>
-
-    <div class="cta-grid">
-      <div class="cta-card">
-        <div class="cta-tier">Just Looking</div>
-        <h3>Start with the Framework</h3>
-        <p>Read the full M2M Framework. Five levels, clear criteria, and an honest picture of what changes at each stage — including where AI makes the biggest difference.</p>
-        <a href="m2m-framework.html" class="cta-btn cta-btn-primary">Read the Framework &rarr;</a>
-      </div>
-
-      <div class="cta-card highlight">
-        <div class="cta-tier">Ready to Act</div>
-        <h3>Book an AI Growth Audit</h3>
-        <p>A paid diagnostic session — <strong style="color:var(--coral);">&pound;799</strong> — that maps how AI can accelerate your path through your current M2M level and prepare your business for the exit you want.</p>
-        <p style="color: var(--coral); font-weight: 500;">Your competitors are not waiting.</p>
-        <a href="ai-growth-audit.html" class="cta-btn cta-btn-dark">Book Your AI Growth Audit &rarr;</a>
-      </div>
-
-      <div class="cta-card">
-        <div class="cta-tier">Want the Story</div>
-        <h3>Meet Paul</h3>
-        <p>Three decades. Multiple businesses. One mining village. The journey from apprentice to multimillion-pound exits — and why that experience now drives the work we do for established UK owners.</p>
-        <a href="about.html" class="cta-btn cta-btn-primary">Read Paul's Story &rarr;</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ARTICLES TEASER -->
-<section class="section section-bordered">
-  <div class="container">
-    <div class="section-label">Thinking</div>
-    <h2 class="section-title">From the Articles</h2>
-    <p class="body-text">Practical writing on AI, growth and exit — for owners who want insight, not inspiration.</p>
-
-    <div class="articles-teaser-grid">
-
-      <article class="article-teaser">
-        <p class="article-teaser__meta">AI &middot; Getting Started</p>
-        <h3 class="article-teaser__title"><a href="articles/ai-where-to-start.html">AI for SMEs: Where to Start When You Have No Technical Background</a></h3>
-        <p class="article-teaser__excerpt">Most owners feel AI is important but have no idea where to begin. This cuts through the noise and gives you a practical starting point.</p>
-        <a href="articles/ai-where-to-start.html" class="article-teaser__link">Read &rarr;</a>
-      </article>
-
-      <article class="article-teaser">
-        <p class="article-teaser__meta">Exit Strategy &middot; Valuation</p>
-        <h3 class="article-teaser__title"><a href="articles/what-buyers-want.html">What Buyers Actually Want: Five Things That Drive Your Valuation</a></h3>
-        <p class="article-teaser__excerpt">Revenue and profit matter, but they are not what buyers pay for. Here is what actually moves the needle on your business valuation.</p>
-        <a href="articles/what-buyers-want.html" class="article-teaser__link">Read &rarr;</a>
-      </article>
-
-      <article class="article-teaser">
-        <p class="article-teaser__meta">Operations &middot; Growth</p>
-        <h3 class="article-teaser__title"><a href="articles/systemise-to-scale.html">Systemise to Scale: How to Build a Business That Runs Without You</a></h3>
-        <p class="article-teaser__excerpt">The secret to a valuable business is not growth — it is independence from the founder. Here is how to build it.</p>
-        <a href="articles/systemise-to-scale.html" class="article-teaser__link">Read &rarr;</a>
-      </article>
-
-    </div>
-
-    <div class="text-center mt-xl">
-      <a href="articles.html" class="cta-btn cta-btn-primary">All Articles &rarr;</a>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
 <footer class="site-footer">
-  <p>Paul Hopewell LLC &copy; All rights reserved.</p>
+  <p>Paul Hopewell LLC &copy; All rights reserved. Registered in Doha, Qatar.</p>
   <p><a href="mailto:ph@paulhopewell.com">ph@paulhopewell.com</a> &middot; paulhopewell.com</p>
 </footer>
 
