@@ -3,78 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Paul Hopewell — AI, Growth & Exit Strategy. Helping established entrepreneurs grow and exit on their own terms.">
-  <title>Paul Hopewell</title>
+  <meta name="description" content="Paul Hopewell LLC — AI, Growth & Exit Strategy. Launching 1st September 2026. A unique and exclusive audit for established business owners.">
+  <title>Paul Hopewell LLC — Launching September 2026</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="assets/images/ph-badge.png" type="image/png">
   <style>
-    .holding-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 48px;
-      align-items: center;
-      min-height: calc(100vh - 186px);
+    .launch-date {
+      font-family: 'DM Mono', monospace;
+      font-size: 14px;
+      letter-spacing: 0.15em;
+      color: var(--coral);
+      text-transform: uppercase;
+      margin-bottom: 12px;
     }
-    .holding-left h1 {
+    .launch-h1 {
       font-family: Georgia, serif;
       font-size: clamp(36px, 5vw, 56px);
       font-weight: 600;
-      line-height: 1.1;
+      line-height: 1.15;
       color: var(--dark);
-      margin-bottom: 20px;
+      margin-bottom: 24px;
     }
-    .holding-left h1 em {
+    .launch-h1 em {
       color: var(--coral);
       font-style: italic;
     }
-    .holding-left .byline {
+    .launch-sub {
       font-size: 18px;
       color: var(--mid);
-      line-height: 1.7;
-      margin-bottom: 32px;
-      max-width: 440px;
+      max-width: 560px;
+      line-height: 1.6;
     }
-    .holding-left .contact-row {
-      display: flex;
-      gap: 24px;
-      flex-wrap: wrap;
-      align-items: center;
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 32px;
+      margin-top: 48px;
     }
-    .holding-left .contact-link {
-      font-family: 'DM Mono', monospace;
-      font-size: 13px;
-      letter-spacing: 0.06em;
+    .feature-item {
+      padding: 28px 0;
+      border-top: 2px solid var(--coral);
+    }
+    .feature-item h3 {
+      font-family: Georgia, serif;
+      font-size: 20px;
+      margin-bottom: 8px;
+      color: var(--dark);
+    }
+    .feature-item p {
+      font-size: 15px;
+      color: var(--mid);
+      line-height: 1.6;
+    }
+    .trial-badge {
+      display: inline-block;
+      background: var(--brass-light);
       color: var(--brass);
-      text-decoration: none;
+      padding: 6px 18px;
+      font-size: 13px;
+      font-family: 'DM Mono', monospace;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+    .launch-cta-row {
       display: flex;
-      align-items: center;
-      gap: 6px;
-      transition: color 0.2s;
-    }
-    .holding-left .contact-link:hover { color: var(--coral); }
-    .holding-left .contact-link svg { flex-shrink: 0; }
-
-    .holding-right {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .holding-right img {
-      width: 100%;
-      max-width: 400px;
-      border-radius: 4px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
-    }
-
-    @media (max-width: 768px) {
-      .holding-grid {
-        grid-template-columns: 1fr;
-        gap: 32px;
-        min-height: auto;
-      }
-      .holding-right { order: -1; }
-      .holding-right img { max-width: 280px; }
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -83,47 +80,67 @@
 <header class="site-header">
   <a href="index.html" class="site-logo">
     <img src="assets/images/ph-badge.png" class="site-logo__badge" alt="">
-    <span style="color: var(--cream);">Paul Hopewell</span>
+    <span style="color: var(--cream);">Paul Hopewell</span>&nbsp;<span>LLC</span>
   </a>
-  <nav class="nav-desktop" aria-label="Primary navigation">
-    <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-
-    </ul>
-  </nav>
-  <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" onclick="document.getElementById('mobile-menu').classList.toggle('is-open'); this.setAttribute('aria-expanded', document.getElementById('mobile-menu').classList.contains('is-open'));">
-    <span></span><span></span><span></span>
-  </button>
 </header>
-<nav class="nav-mobile" id="mobile-menu" aria-label="Mobile navigation">
-  <ul>
-    <li style="padding-top: 16px;"><a href="index.html">Home</a></li>
-  </ul>
-</nav>
 
-<section class="section" style="padding-top: 124px;">
+<section class="hero hero--home">
   <div class="container">
-    <div class="holding-grid">
-      <div class="holding-left">
-        <h1>I help established business owners <em>grow and exit</em> on their own terms.</h1>
-        <p class="byline">Thirty years of building, scaling and selling businesses — now applying AI to the same playbook. Based in Qatar, serving entrepreneurs worldwide.</p>
-        <div class="contact-row">
-          <a href="mailto:ph@paulhopewell.com" class="contact-link">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-            ph@paulhopewell.com
-          </a>
+    <p class="hero-tagline">Paul Hopewell LLC</p>
+    <h1>Something Different <em>Is Coming.</em></h1>
+    <p class="hero-subtitle">A unique and exclusive Growth, AI &amp; Exit Audit — built for established business owners who want more than generic advice.</p>
+  </div>
+</section>
 
-        </div>
+<section class="section">
+  <div class="container">
+    <div class="launch-date">Launching</div>
+    <h2 class="launch-h1">1st September <em>2026</em></h2>
+    <p class="launch-sub">We are currently testing the AI Growth Audit with a small group of established business owners. The results so far have exceeded expectations — real insights, real numbers, real clarity on the path to exit.</p>
+  </div>
+</section>
+
+<section class="section section-bordered">
+  <div class="container">
+    <div class="section-label">What We're Building</div>
+    <h2 class="section-title">Three Things Nobody Else Combines</h2>
+
+    <div class="feature-grid">
+      <div class="feature-item">
+        <h3>Business Growth</h3>
+        <p>Not theory. Thirty years of building, scaling and selling real businesses — compressed into a diagnostic that shows you exactly where your next lever is.</p>
       </div>
-      <div class="holding-right">
-        <img src="assets/images/paul-hopewell.jpg" alt="Paul Hopewell">
+      <div class="feature-item">
+        <h3>Practical AI</h3>
+        <p>AI applied to <em>your</em> operations, <em>your</em> numbers, <em>your</em> exit timeline. No jargon. No hype. A roadmap built around your business — not a tech demo.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Exit Strategy</h3>
+        <p>Most owners only sell once. We've done it more than once. We help you build a business someone wants to buy — and prepare you for what comes after.</p>
       </div>
     </div>
   </div>
 </section>
 
+<section class="section section-bordered">
+  <div class="container">
+    <div class="section-label">The Trial</div>
+    <h2 class="section-title">Excellent Results So Far</h2>
+    <p class="launch-sub">Early clients are reporting clarity they have not found anywhere else. The audit pinpoints the specific AI levers that will move the needle in their business — and maps them onto a real exit timeline.</p>
+    <p class="launch-sub" style="margin-top: 16px;">We are not launching until it is right. September 1st is the date.</p>
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="container">
+    <h2 class="section-title">The Countdown Is On</h2>
+    <p class="body-text" style="max-width: 520px;">A new kind of business audit. A credible guide who has built, sold and exited. And the tools to help you do the same — faster.</p>
+    <p class="body-text" style="max-width: 520px; color: rgba(249,247,244,0.6);">The Growth &amp; AI Audit. 1st September 2026.</p>
+  </div>
+</section>
+
 <footer class="site-footer">
-  <span class="footer-brand">Paul Hopewell &mdash; AI, Growth &amp; Exit Strategy</span>
+  <span class="footer-brand">Paul Hopewell LLC &mdash; Growth, AI &amp; Exit Strategy</span>
   <div class="footer-contact">
     <span class="footer-contact-item">
       <svg width="14" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
